@@ -7,12 +7,11 @@
 }
 /* adding the background image and giving them value */
 .bg-img{
-  background: url('./background.jpg');
+  background: url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80');
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
-/* adding some extra shades to the background */
 .bg-img:after{
   position: absolute;
   content: '';
@@ -22,7 +21,7 @@
   width: 100%;
   background: rgba(0,0,0,0.7);
 }
-/* making all the elements in a box and sizing it  */
+/*login form part(box) */
 .content{
   position: absolute;
   top: 50%;
@@ -35,7 +34,7 @@
   background: rgba(255,255,255,0.04);
   box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
 }
-/* this is for the login form header */
+/*  header */
 .content header{
   color: white;
   font-size: 33px;
@@ -43,7 +42,7 @@
   margin: 0 0 35px 0;
   
 }
-/* now adding the bog white box around email and password section */
+/* box containng symbol and email(input box) */
 .field{
   position: relative;
   height: 45px;
@@ -51,10 +50,11 @@
   display: flex;
   background: rgba(255,255,255,0.94);
 }
-/* now lets bring the space in email and password part */
+/* email, password aagadi ko symbol*/
 .field span{
   color: #222;
   width: 40px;
+  margin-top: 12px;
 }
 /* giving some beauty to this writting part */
 .field input{
@@ -72,12 +72,11 @@
   margin-top: 16px;
 }
 
-/* giving a clear look to our forgot password */
+/* forgot password */
 .pass{
   text-align: left;
   margin: 10px 0;
 }
-/* giving a beauty to our forgot password */
 .pass a{
   color: white;
   text-decoration: none;
