@@ -1,0 +1,118 @@
+/* at first giving the values to the background */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+/* adding the background image and giving them value */
+.bg-img{
+  background: url('./background.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+/* adding some extra shades to the background */
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+/* making all the elements in a box and sizing it  */
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999; 
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+/* this is for the login form header */
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  
+}
+/* now adding the bog white box around email and password section */
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+/* now lets bring the space in email and password part */
+.field span{
+  color: #222;
+  width: 40px;
+}
+/* giving some beauty to this writting part */
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  
+}
+/* giving the gap between two different  part */
+.space{
+  margin-top: 16px;
+}
+
+/* giving a clear look to our forgot password */
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+/* giving a beauty to our forgot password */
+.pass a{
+  color: white;
+  text-decoration: none;
+}
+/* creating hovering effect */
+.pass:hover a{
+  text-decoration: underline;
+}
+/* providing some more decorations to login button */
+.field input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  
+
+}
+/* adding a little hover effect in login button */
+.field input[type="submit"]:hover{
+  background: #2691d9;
+}
+/* signup part */
+.signup{
+  font-size: 15px;
+  color: white;
+  
+}
+/* giving some decoration */
+.signup a{
+  color: #59d363;
+  text-decoration: none;
+}
+/* adding the hover effect */
+.signup a:hover{
+  text-decoration: underline;
+}
