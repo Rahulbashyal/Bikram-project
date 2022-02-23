@@ -34,6 +34,14 @@
   background: rgba(255,255,255,0.04);
   box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
 }
+.content h1{
+  color: white;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+
+  
+}
 /*  header */
 .content header{
   color: white;
