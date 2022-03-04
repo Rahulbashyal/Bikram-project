@@ -1,0 +1,54 @@
+/* universal background */
+* {
+  background-color: #ddd;
+}
+/* first part (box) */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 60px 32px;
+  width: auto;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+/* header part */
+.content header {
+  color: rgb(0, 0, 0);
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+}
+/*form input */
+.container input {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 1px solid rgb(131, 116, 116);
+  border-radius: 10px;
+  padding: 8px;
+  color: #252121;
+  font-size: 16px;
+  outline: none;
+}
+/*submit btn */
+.container input[type="submit"] {
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/* hover effect on submit button */
+.container input[type="submit"]:hover {
+  background: #2691d9;
+}
+/* form input while focused(touched or started to type */
+input:focus {
+  box-shadow: 0 0 4px #740a5df8;
+  border: 1px solid #0e3aff;
+}

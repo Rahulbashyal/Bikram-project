@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color:khaki;
+    box-sizing: border-box;
+}
+/* hotel name  */
+h1{
+    margin: auto;
+    padding: 20px;
+    font-size: xx-large;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+/* search-box starts */
+.container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    height: 32px;
+}
+.search{
+    border: 3px solid blue;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+.text{
+    border: none;
+}
+/* search-box ends */
+/* main part starts */
+/* first of all giving the element the proper view  */
+.room{
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+    grid-gap: 20px 40px;}
+    /* now the food part */
+.items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 0 20px;
+  }
+
+  .details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+  }
+  .input{
+      padding: 9px;
+      font-size: large;
+      font-weight: bold;
+  }
+  .details-sub>h5{
+    font-weight: 600;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* food part ends */
+  /* staff-list */
+  .new-staff {
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    background-color: khaki;
+}
+.new-staff table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+.title>h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* end of staff list */
+/* room list starts */
+.room-1{
+float: left;
+width: 33.33%;
+padding: 5px;
+
+}
+.room-container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.room-1>p{
+    font:small-caption;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+/* room part ends */
