@@ -8,7 +8,6 @@ body{
   background-color: #f3f3f3;
   font-family: 'Poppins',sans-serif;
 }
-
 .menu{
   padding: 0;
   display: grid;
@@ -17,7 +16,7 @@ body{
   grid-gap: 20px 40px;
 }
 .heading{
-  background-color: #d3d623b2;
+  background-color:  #d3d623b2;
   color: #ffffff;
   margin-bottom: 30px;
   padding: 120px 0 30px 0;
@@ -35,7 +34,6 @@ body{
   font-size: 22px;
   letter-spacing: 5px;
 }
-
 .food-items{
   display: grid;
   position: relative;
@@ -43,6 +41,11 @@ body{
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   margin: 0 20px;
+}
+.food-items img{
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
 .details{
